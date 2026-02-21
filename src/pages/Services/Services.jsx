@@ -70,7 +70,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="division-image-wrapper">
-                        <img src="/logistics.png" alt="Logistics" className="division-img" />
+                        <img src="/logistics.jpg" alt="Logistics" className="division-img" />
                         <div className="dots-decoration"></div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="division-image-wrapper">
-                            <img src="/car-rental.png" alt="Car Rental" className="division-img" />
+                            <img src="/car-rental.jpg" alt="Car Rental" className="division-img" />
                             <div className="dots-decoration"></div>
                         </div>
                     </div>

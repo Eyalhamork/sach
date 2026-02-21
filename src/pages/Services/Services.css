@@ -6,7 +6,7 @@
 
     /* Explicit background setup */
     background-color: var(--color-primary);
-    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('/services.png');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('/services.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
