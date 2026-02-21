@@ -22,7 +22,7 @@ const Home = () => {
                     {/* Logistics Section */}
                     <div className="showcase-row">
                         <div className="showcase-image">
-                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Logistics & Freight" />
+                            <img src="/logistics.png" alt="Logistics & Freight" />
                             <div className="showcase-badge">
                                 <div className="badge-icon-wrapper logistics">
                                     <Truck size={24} />
@@ -69,7 +69,7 @@ const Home = () => {
                     {/* Car Rental Section */}
                     <div className="showcase-row reverse">
                         <div className="showcase-image">
-                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Premium Car Rental" />
+                            <img src="/car-rental.png" alt="Premium Car Rental" />
                             <div className="showcase-badge">
                                 <div className="badge-icon-wrapper rental">
                                     <Star size={24} />
@@ -150,7 +150,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="why-us-image">
-                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="SACH Professional Driver" className="rounded-xl shadow-2xl" />
+                            <img src="/driver.png" alt="SACH Professional Driver" className="rounded-xl shadow-2xl" />
                             <div className="floating-card glass">
                                 <Award size={32} className="text-secondary mb-2" />
                                 <span className="font-bold text-lg">Top Rated</span>
