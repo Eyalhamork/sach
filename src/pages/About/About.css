@@ -59,6 +59,7 @@
 .intro-stats {
     display: grid;
     gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
 .stat-card {
@@ -207,6 +208,7 @@
     .about-header {
         clip-path: none;
         padding: 120px 0 60px;
+        background-position: center top;
     }
 
     .about-header h1 {

@@ -42,6 +42,7 @@
     max-width: 600px;
     margin: 0 auto;
     font-weight: 300;
+    padding: 0 1rem;
 }
 
 .bg-light {
@@ -195,6 +196,11 @@
     .division-content,
     .division-content.reverse {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .division-info {
+        padding: 0 0.5rem;
     }
 
     .division-img {

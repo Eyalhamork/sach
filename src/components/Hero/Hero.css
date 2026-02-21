@@ -140,7 +140,7 @@
 /* Responsive */
 @media screen and (max-width: 960px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
 
     .hero-subtitle {
@@ -150,7 +150,11 @@
 
 @media screen and (max-width: 600px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .hero-btns {
