@@ -1,0 +1,197 @@
+/* Premium Contact Page Styles */
+.contact-header {
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    color: var(--color-white);
+    padding: 180px 0 100px;
+    text-align: center;
+    margin-top: -80px;
+    margin-top: -80px;
+    position: relative;
+    /* clip-path removed for a cleaner, more premium block feel, or updated to a subtle curve */
+    border-bottom: 4px solid var(--color-secondary);
+}
+
+.contact-header h1 {
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-family-heading);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.contact-subtitle {
+    display: block;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-header p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background: var(--color-white);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-xl);
+}
+
+.contact-info-panel {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    z-index: 0;
+}
+
+.contact-info-panel h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-secondary);
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-family-heading);
+    font-size: 2rem;
+}
+
+.contact-info-panel p {
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.contact-details {
+    margin-top: var(--spacing-2xl);
+    position: relative;
+    z-index: 1;
+}
+
+.detail-item {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.detail-icon {
+    color: var(--color-secondary);
+    flex-shrink: 0;
+}
+
+.detail-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.detail-item p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.contact-form-panel {
+    padding: 4rem;
+}
+
+.form-title {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+    font-family: var(--font-family-heading);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius-md);
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    /* Use secondary color for premium accent */
+    background: var(--color-white);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+    /* Soft gold glow */
+}
+
+.btn-full {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 960px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-header {
+        clip-path: none;
+        padding: 120px 0 60px;
+    }
+
+    .contact-header h1 {
+        font-size: 3rem;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 2rem;
+    }
+}

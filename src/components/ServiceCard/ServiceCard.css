@@ -1,0 +1,144 @@
+/* Premium Service Card Styles */
+.service-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow-md);
+    transition: all var(--transition-normal);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-xl);
+}
+
+.card-image-wrapper {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(15, 23, 42, 0.6) 100%);
+    opacity: 0.6;
+    transition: opacity var(--transition-normal);
+}
+
+.service-card:hover .card-overlay {
+    opacity: 0.4;
+}
+
+.card-icon-float {
+    position: absolute;
+    bottom: -24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow-lg);
+    z-index: 2;
+    transition: all var(--transition-normal);
+}
+
+.service-card:hover .card-icon-float {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.card-content {
+    padding: var(--spacing-xl);
+    padding-top: var(--spacing-2xl);
+    /* Space for floating icon */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-normal);
+}
+
+.service-card:hover .card-title {
+    color: var(--color-secondary);
+}
+
+.card-desc {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.card-footer {
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: var(--spacing-md);
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: var(--font-size-xs);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color var(--transition-normal);
+}
+
+.service-card:hover .card-link {
+    color: var(--color-secondary);
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.group-hover\:translate-x-1:hover {
+    transform: translateX(0.25rem);
+}
+
+/* Handled via JS/CSS logic usually but utility here helps */
+.service-card:hover .ml-2 {
+    transform: translateX(5px);
+}
